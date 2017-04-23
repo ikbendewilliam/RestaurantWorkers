@@ -1,0 +1,20 @@
+{
+   "results" : [
+	   {
+          "name" : "Restaurant de William Kortrijk"
+       },
+	   {
+          "name" : "Chef kok trijk"
+       },
+	   {
+          "name" : "Altijy goei ete"
+       },
+	   {
+          "name" : "Chez-moi"
+       },
+	   {
+          "name" : "Bij de Bomma"
+       }
+   ],
+   "status" : "OK"
+}

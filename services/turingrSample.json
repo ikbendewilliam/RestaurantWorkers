@@ -1,0 +1,21 @@
+{
+   "success": true,
+   "code": 200,
+   "data": [
+	   {
+          "fullName": "Sven De Rijkerd",
+		  "function": "culinary assistance",
+		  "location": "kortrijk area, belgium"
+ 	 },
+	 {
+		"fullName": "Ben de Armer",
+		"function": "‎general manager",
+		"location": "kortrijk area, belgium"
+	},
+	{
+	   "fullName": "Glen De Middenstand",
+	   "function": "waiter",
+	   "location": "kortrijk area, belgium"
+   }
+  ]
+}

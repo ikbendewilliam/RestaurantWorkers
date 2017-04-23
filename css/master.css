@@ -1,0 +1,296 @@
+    @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+    main, header>nav, footer>p {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    main, footer {
+        position: relative;
+        top: 96px;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #100030;
+        background-color: #fffafa;
+        font-size: 1.4em;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        color: #a63e14;
+        width: 100%;
+        border-bottom: solid 3px #a63e14;
+        margin: 8px 0;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        color: #bc6d4d;
+        width: 25%;
+        border-bottom: solid 1px #bc6d4d;
+    }
+
+    main {
+        padding: 8px;
+        min-height: calc(100% - 136px);
+        height: auto;
+    }
+
+    header, footer {
+        background-color: #a63e14;
+        font-size: 1.5em;
+        padding: 16px;
+        width: 100%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+    .logo {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background: url("../images/logoSmall.png");
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: #a63e14;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #f88;
+        cursor: pointer;
+    }
+
+    .restaurant a, header a {
+        -webkit-transition: background-color 0.5s 0s, color 0.5s 0s;
+        -moz-transition: background-color 0.5s 0s, color 0.5s 0s;
+        -ms-transition: background-color 0.5s 0s, color 0.5s 0s;
+        -o-transition: background-color 0.5s 0s, color 0.5s 0s;
+        transition: background-color 0.5s 0s, color 0.5s 0s;
+        display: block;
+        padding: 8px;
+        color: #a63e14;
+    }
+
+    .restaurant a:hover {
+        background-color: #d29c87;
+    }
+
+    header a {
+        text-align: center;
+        color: #f88;
+        line-height: 48px;
+    }
+
+    header a:hover {
+        color: #fcc;
+        background-color: inherit;
+    }
+
+    nav, nav>ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        list-style: none;
+        text-transform: capitalize;
+    }
+
+    header>nav {
+        justify-content: space-between;
+    }
+
+    footer {
+        color: #f88;
+        text-align: right;
+        padding: 4px;
+        margin: 0;
+    }
+
+    footer>p {
+        background-color: inherit;
+    }
+
+    header>a {
+        display: none;
+        width: 90%;
+        height: 48px;
+        text-align: left;
+    }
+
+    .burgerButton {
+        width: 10%;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    div>div, p {
+        width: 100%;
+        margin: 4px;
+        padding: 4px;
+    }
+
+    div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .restaurant {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .restaurant>a {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .restaurant>a p {
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 12px;
+        -webkit-transition: transform 0.5s 0s, background-color 0.5s 0s, color 0.5s 0s;
+        -moz-transition: transform 0.5s 0s, background-color 0.5s 0s, color 0.5s 0s;
+        -ms-transition: transform 0.5s 0s, background-color 0.5s 0s, color 0.5s 0s;
+        -o-transition: transform 0.5s 0s, background-color 0.5s 0s, color 0.5s 0s;
+        transition: transform 0.5s 0s, background-color 0.5s 0s, color 0.5s 0s;
+    }
+
+    div.collapsed {
+        max-height: 0px;
+        overflow: hidden;
+        -webkit-transition: max-height 0.1s 0s;
+        -moz-transition: max-height 0.1s 0s;
+        -ms-transition: max-height 0.1s 0s;
+        -o-transition: max-height 0.1s 0s;
+        transition: max-height 0.1s 0s;
+    }
+
+    div.opened {
+        max-height: 2000px;
+    }
+
+    .opened {
+        max-height: 200px;
+        overflow: hidden;
+        -webkit-transition: max-height 0.5s 0s;
+        -moz-transition: max-height 0.5s 0s;
+        -ms-transition: max-height 0.5s 0s;
+        -o-transition: max-height 0.5s 0s;
+        transition: max-height 0.5s 0s;
+    }
+
+    .rotated {
+        background-color: #a63e14;
+        color: #e1e2e0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .straight {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    .searchbar {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .searchbar input {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        height: 32px;
+        padding: 2px;
+        margin: 2px;
+        border: solid 2px #aaa;
+    }
+
+    .searchbar input:hover {
+        border: solid 2px #bc6d4d;
+    }
+
+    .searchbar input:focus {
+        border: solid 2px #a63e14;
+    }
+
+    .searchbar>a {
+        width: 32px;
+        height: 32px;
+        margin: 2px;
+        padding: 2px;
+        line-height: 28px;
+        position: relative;
+        left: -32px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        main, header>nav, footer>p {
+            width: 800px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        h2 {
+            width: 50%;
+        }
+        /* only hide when screen is small */
+        nav>a {
+            display: none;
+        }
+        nav.collapsed {
+            max-height: 0px;
+            overflow: hidden;
+            -webkit-transition: max-height 0.1s 0s;
+            -moz-transition: max-height 0.1s 0s;
+            -ms-transition: max-height 0.1s 0s;
+            -o-transition: max-height 0.1s 0s;
+            transition: max-height 0.1s 0s;
+        }
+        main, footer>p {
+            width: 480px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        header>nav, header>nav>ul {
+            flex-flow: column;
+            padding-top: 16px;
+        }
+        header>nav a {
+            line-height: 24px;
+            text-align: right;
+        }
+        header>a {
+            display: inline-block;
+        }
+    }
